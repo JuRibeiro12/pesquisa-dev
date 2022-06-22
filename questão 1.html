@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <style>
+        h1{
+            color: darkgreen;
+
+        }
+        #sub_titulo{
+            color: black;
+            font-weight: 100;
+            font-size: larger;
+
+        }
+        #resultado{
+            width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Questão 1</h1>
+    <h1 id="sub_titulo">Questão feita para calcular área de um terreno.</h1>
+    <input type="text" name="largura" id="largura" placeholder="Insira a largura">
+    <input type="text" name="comprimento" id="comprimento" placeholder="Insira o comprimento">
+    <button onclick="calcularArea()">Calcular</button><br>
+    <input type="text" name="resultado" id="resultado">
+    <hr>
+    <a href="index.html">Volte para a página inicial</a><br>
+    <a href="questão 2.html">Veja a questão 2</a>
+</body>
+<script>
+    function calcularArea(){
+        var largura = document.getElementById("largura").value;
+        var comprimento = document.getElementById("comprimento").value;
+        var area = largura*comprimento
+        document.getElementById('resultado').value= "A aréa é de "+area+" m²";
+    }
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+    <style>
+        h1{
+            color: darkgreen;
+        }
+        #descrição{
+            color: black;
+            font-weight: 100;
+            font-size: larger;
+        }
+        #quant{
+            width: 500px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Questão 2</h1>
+    <h1 id = "descrição">Esta questão irá calcular a quantidade de ferraduras necessárias para equipar os cavalos de um haras.</h1>
+    <input type="text" name="cavalos" id="cavalos" placeholder="Insira a quantidade de cavalos">
+    <button onClick="calcularQuant()">Calcular</button><br>
+    <input type="text" name="quant" id="quant">
+    <hr>
+    <a href="index.html">Volte para a página inicial</a><br>
+    <a href="questão 1.html">Volte para a questão 1</a><br>
+    <a href="questão 3.html">Veja a questão 3</a>
+</body>
+<script>
+    function calcularQuant(){
+        var cavalos = document.getElementById("cavalos").value;
+        var quant = cavalos * 4
+        document.getElementById('quant').value= "Você precisará de "+quant+" ferraduras";
+    }
+</script>
+</html>

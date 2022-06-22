@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <style>
+        h1{
+            color: darkgreen;
+        }
+        #descrição{
+            color: black;
+            font-weight: 100;
+            font-size: larger;
+        }
+        #arrecadação{
+            width: 700px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Questão 3</h1>
+    <h1 id="descrição">Esta questão irá calcular em dinheiro a quantidade vendida em pães e broas em uma padaria em um dia e quanto desse dinheiro precisará ser destinado à poupança do local.</h1>
+    <input type="text" name="pão" id="pão" placeholder="Insira quantos pães foram comprados">
+    <input type="text" name="broas" id="broas" placeholder="Insira quantas broas foram compradas">
+    <button onClick="calcularQuantidade()">Calcular</button><br>
+    <input type="text" name="arrecadação" id="arrecadação">
+    <hr>
+    <a href="index.html">Volte para a página inicial</a><br>
+    <a href="questão 2.html">Volte para a questão 2</a><br>
+    <a href="questão 4.html">Veja a questão 4</a>
+</body>
+<script>
+    function calcularQuantidade(){
+        var pães = document.getElementById("pão").value;
+        var broas = document.getElementById("broas").value;
+        var pt = pães*0.12
+        var bt= broas*1.5
+        var arrecadação = pt + bt;
+        var poupança = arrecadação*0.1;
+        document.getElementById('arrecadação').value= "Foi arrecadado "+arrecadação+" reais no dia e "+poupança+" reais precisam ser destinados à poupança.";
+
+    }
+</script>
+</html>

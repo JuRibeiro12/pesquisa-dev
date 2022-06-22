@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <style>
+        h1{
+            color: darkgreen;
+        }
+        #descrição{
+            color: black;
+            font-weight: 100;
+            font-size: larger;
+        }
+        #total{
+            width: 500px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Questão 4</h1>
+    <h1 id="descrição">Esta questão irá dizer quantos dias você já viveu</h1>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+    <input type="text" name="idade" id="idade" placeholder="Insira a sua idade">
+    <button onClick="calcularDias()">Calcular</button><br>
+    <input type="text" name="total" id="total">
+    <hr>
+    <a href="index.html">Volte para a página inicial</a><br>
+    <a href="questão 2.html">Volte para a questão 3</a><br>
+</body>
+<script>
+    function calcularDias(){
+        var nome = document.getElementById("nome").value;
+        var idade = document.getElementById("idade").value;
+        var total = idade * 365
+        document.getElementById('total').value= ""+nome+", você já viveu "+total+" dias.";
+
+    }
+</script>
+</html>
