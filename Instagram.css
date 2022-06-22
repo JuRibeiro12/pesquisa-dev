@@ -1,0 +1,49 @@
+body{
+    background: #eee
+}
+#linha_inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0f0;
+    height: 83vh;
+}
+#img{
+    /* border: 1px solid #00f; */
+    height: 70%;
+    width: 23rem;
+    margin: 0 1.1rem;
+    display: flex;
+    align-items: center;
+}
+#img img{
+    width: 100%;
+
+}
+#login{
+    /* border: 1px solid #f00; */
+    height: 70%;
+    width: 23rem;
+    margin: 0 1.1rem;
+}
+#credenciais{
+    border: 1px solid #c3c3c3;
+    border-radius: 2px;
+    background: #fff;
+    height: 75%;
+    margin-bottom: 3%;
+}
+#credenciais img{
+    display: block;
+    margin: 1.5rem auto;
+
+}
+#criar_conta{
+    border: 1px solid #f00;
+    height: 11%;
+    margin-bottom: 3%;
+}
+#app{
+    border: 1px solid #f00;
+    height: 18%;
+}
