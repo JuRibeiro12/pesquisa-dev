@@ -49,3 +49,5 @@ pagamento = gasolina * litros
 console.log("Você terá que pagar "+pagamento+" reais.") */
 
 
+
+
