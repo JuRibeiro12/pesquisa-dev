@@ -1,0 +1,58 @@
+body{
+    background-color: blueviolet;
+    color: cornsilk;
+    margin: 0;
+    padding: 0;
+}
+
+.centro {
+    text-align: center;
+}
+
+.caracteristicas{
+    /* border: 1px solid cornsilk; */
+    width: 300px;
+    margin: 0 auto;
+    display: inline-block;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+#margem{
+    text-align: center;
+}
+
+#rodape{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: darkmagenta;
+    text-align: center;
+    height: 5em;
+    transition: background-color 5s, color 7s;
+}
+
+#rodape:hover{
+    background-color: bisque;
+    color: black;
+}
+
+/* .centro a{
+    border: 1px dashed white;
+    padding: 3px;
+    background-color: thistle;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 2s, color 3s;
+} */
+
+.centro a:hover{
+    background-color: darkslateblue;
+    color: gainsboro;
+}
+
+#links{
+    margin-bottom: 20px;
+}
