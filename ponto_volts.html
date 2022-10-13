@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        #ponto {
+            color: #192559;
+        }
+
+        #topo {
+            background-color: #80cc28;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body class="d-flex flex-column">
+        <div class="d-flex justify-content-between fs-1 px-3 py-2" id="topo">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+        <div id="fundo">
+            <div class="container d-flex justify-content-center align-items-center">
+                <form action="login.php" method="POST">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-center" id="tamanho_titulo"> Olá usuário</h1>
+                            <div> <i class="fa-regular fa-id-badge"></i>
+                                <div class="d-grid gap-2 col-12 mx-auto" id="ponto">
+                                    <button class="btn btn-light" type="button">Marcar Ponto</button>
+                                </div>
+                                data e hora
+
+                            </div>
+                            <div class="text-center"><i class="fa-solid fa-lock-open"></i></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
